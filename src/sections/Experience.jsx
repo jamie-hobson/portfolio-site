@@ -25,12 +25,11 @@ const Experience = () => {
       content: (
         <>
           <p className="pb-2">
-            I am working in this role to lead development of the customer
-            portal. I have been working full time since August 2024, and prior
-            to that I worked part time while concluding my studies at
-            university.
+            I worked in this role part-time while concluding my studies at
+            university, and then full-time since August 2024
           </p>
-          <p>I Performed various tasks including:</p>
+          <p className="pb-2">Product Lead on company’s customer portal</p>
+          <p className="pb-1">I Performed various tasks including:</p>
           <li>System and UI design</li>
           <li>Full stack development with NextJS</li>
           <li>
@@ -59,8 +58,10 @@ const Experience = () => {
       dates: "June 2023 - August 2023",
       content: (
         <>
-          <p>Began constructing the company’s customer portal</p>
-          <p>
+          <p className="pb-2">
+            Began constructing the company’s customer portal
+          </p>
+          <p className="pb-2">
             Reached an impressive level of functionality for the short 6-week
             timeframe
           </p>
@@ -89,8 +90,10 @@ const Experience = () => {
       dates: "June 2022 - September 2022",
       content: (
         <>
-          <p>Wrote embedded C code to initialize and test a new device</p>
-          <p>
+          <p className="pb-2">
+            Wrote embedded C code to initialize and test a new device
+          </p>
+          <p className="pb-2">
             Gained valuable experience of both debugging software and
             collaborating with other engineers, while developing my analytical
             skills
@@ -121,7 +124,7 @@ const Experience = () => {
       dates: "June 2021 - August 2021",
       content: (
         <>
-          <p>
+          <p className="pb-2">
             Designed and coded a Verilog bus functional model to improve
             simulation time for Elliptic Curve Crypto IP
           </p>
@@ -150,7 +153,9 @@ const Experience = () => {
       dates: "September 2019 - June 2024",
       content: (
         <>
-          <p className="font-bold">Grade: Distinction (equivalent to a 1st)</p>
+          <p className="font-bold pb-2">
+            Grade: Distinction (equivalent to a 1st)
+          </p>
           <li>
             Triple accredited by the Institution of Engineering and Technology
             (IET), Engineering Council and British Computer Society
