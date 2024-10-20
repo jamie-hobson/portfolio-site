@@ -1,14 +1,17 @@
 // src/TextureMesh.js
-import React, { useRef } from 'react';
-import { useFrame } from '@react-three/fiber';
-import * as THREE from 'three';
+import React, { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
+import * as THREE from "three";
 
 const TextureMesh = () => {
   const mesh = useRef(null);
-  useFrame(state => {
-    const { clock, mouse, gl, scene, camera } = state;
+  useFrame((state) => {
+    const { clock, mouse, gl } = state;
     if (mesh.current) {
-      mesh.current.material.uniforms.u_mouse.value = [mouse.x / 2 + 0.5, mouse.y / 2 + 0.5];
+      mesh.current.material.uniforms.u_mouse.value = [
+        mouse.x / 2 + 0.5,
+        mouse.y / 2 + 0.5,
+      ];
       mesh.current.material.uniforms.u_time.value = clock.getElapsedTime();
       let c = gl.domElement.getBoundingClientRect();
       mesh.current.material.uniforms.u_resolution.value = [c.width, c.height];
@@ -22,13 +25,18 @@ const TextureMesh = () => {
         fragmentShader={fragmentShader}
         vertexShader={vertexShader}
         uniforms={{
-          u_color: {value: [0,1,0.4392156862745098]},u_background: {value: [0.09803921568627451,0.09411764705882353,0.16470588235294117,1]},
+          u_color: { value: [0, 1, 0.4392156862745098] },
+          // u_background: {
+          //   value: [
+          //     0.09803921568627451, 0.09411764705882353, 0.16470588235294117, 1,
+          //   ],
+          // },
           u_background: { value: new THREE.Vector4(0.0196, 0.0118, 0.125, 1) },
           u_speed: { value: 0.261 },
           u_detail: { value: 0.206 },
           u_time: { value: 0 },
           u_mouse: { value: [0, 0] },
-          u_resolution: { value: [1024, 1024] }
+          u_resolution: { value: [1024, 1024] },
         }}
         wireframe={false}
         wireframeLinewidth={0}

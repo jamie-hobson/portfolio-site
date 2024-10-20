@@ -185,7 +185,7 @@ const Experience = () => {
             <ul className="hidden md:flex border-r-white border-r-2  flex-col w-full md:max-w-64">
               <li
                 className={`p-2 ${
-                  selectedExperience == "juniorCloudDeveloper" &&
+                  selectedExperience === "juniorCloudDeveloper" &&
                   "text-accentBlue bg-white bg-opacity-20"
                 } text-left`}
                 onClick={() => setSelectedExperience("juniorCloudDeveloper")}
@@ -194,7 +194,7 @@ const Experience = () => {
               </li>
               <li
                 className={`p-2 ${
-                  selectedExperience == "cloudDeveloperIntern" &&
+                  selectedExperience === "cloudDeveloperIntern" &&
                   "text-accentBlue bg-white bg-opacity-20"
                 } text-left`}
                 onClick={() => setSelectedExperience("cloudDeveloperIntern")}
@@ -203,7 +203,7 @@ const Experience = () => {
               </li>
               <li
                 className={`p-2 ${
-                  selectedExperience == "autoApplicationsIntern" &&
+                  selectedExperience === "autoApplicationsIntern" &&
                   "text-accentBlue bg-white bg-opacity-20"
                 } text-left`}
                 onClick={() => setSelectedExperience("autoApplicationsIntern")}
@@ -212,7 +212,7 @@ const Experience = () => {
               </li>
               <li
                 className={`p-2 ${
-                  selectedExperience == "designEngineerIntern" &&
+                  selectedExperience === "designEngineerIntern" &&
                   "text-accentBlue bg-white bg-opacity-20"
                 } text-left`}
                 onClick={() => setSelectedExperience("designEngineerIntern")}
@@ -221,7 +221,7 @@ const Experience = () => {
               </li>
               <li
                 className={`p-2 ${
-                  selectedExperience == "student" &&
+                  selectedExperience === "student" &&
                   "text-accentBlue bg-white bg-opacity-20"
                 } text-left`}
                 onClick={() => setSelectedExperience("student")}
