@@ -59,9 +59,8 @@ const Projects = () => {
             viewport={{ once: true }}
             className="text-base text-black mt-10"
           >
-            More detail, including GitHub and Figma links where appropriate,
-            will be added. Please don't hesitate to get in touch if you would
-            like to know more!
+            Please don't hesitate to get in touch if you would like to know more
+            about any of the projects below!
           </motion.p>
           <motion.div
             className="grid grid-cols-12 grid-rows-8 gap-3 md:gap-5 w-full h-[700px] md:h-[500px] mt-4"
