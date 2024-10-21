@@ -28,7 +28,7 @@ const Contact = () => {
                 Send me an Email
               </a>
               <a
-                href="https://www.linkedin.com/in/jamie-hobson/"
+                href="https://www.linkedin.com/in/jamie-hobson-939b06195/"
                 className="border-2 border-white rounded-full py-2 px-8 text-center items-center hover:bg-white hover:text-navy flex justify-center"
               >
                 LinkedIn
