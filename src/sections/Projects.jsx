@@ -57,12 +57,11 @@ const Projects = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-xl text-black mt-10"
+            className="text-base text-black mt-10"
           >
-            More detail on the projects listed here is still to be added,
-            including GitHub and Figma links where appropriate, but for now
-            please don't hesitate to get in touch if you would like to know
-            more!
+            More detail, including GitHub and Figma links where appropriate,
+            will be added. Please don't hesitate to get in touch if you would
+            like to know more!
           </motion.p>
           <motion.div
             className="grid grid-cols-12 grid-rows-8 gap-3 md:gap-5 w-full h-[700px] md:h-[500px] mt-4"
