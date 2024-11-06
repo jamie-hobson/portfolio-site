@@ -11,6 +11,7 @@ import Skills from './sections/Skills';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
+
 function App() {
   const { scrollY } = useScroll();
   const homeRef = useRef(null);
